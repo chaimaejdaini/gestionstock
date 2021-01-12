@@ -42,10 +42,11 @@ public class db_connection {
           
   connection = DriverManager.getConnection(url, username, password);
         } catch (Exception e) 
-{System.err.println(e);//
-        }
-        return connection;
-    }
+{
+        	System.err.println(e);
+}
+
+        return connection;}
 
  
    public Connection closeconnexion() {
